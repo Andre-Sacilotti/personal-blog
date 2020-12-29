@@ -1,0 +1,45 @@
+body {
+    background-color: #16151F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainLayout {
+    width: 100%;
+    margin: auto;
+    height: 2500px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+    .mainLayout {
+        border: #ffffff solid 1px;
+        width: 75%;
+        margin: auto;
+        height: 2500px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mainLayout {
+        border: #61dafb solid 1px;
+        width: 75%;
+        margin: auto;
+        height: 2500px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .mainLayout {
+        border: #ff0026 solid 1px;
+        width: 1260px;
+        margin: auto;
+        height: 2500px;
+    }
+}
+
+
+
+
+
+

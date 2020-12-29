@@ -1,0 +1,38 @@
+.NavContainer{
+    margin: 0;
+}
+
+.Navbar{
+    margin: 0;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.MobileNavBar{
+    margin: 0;
+    padding-top: 20px;
+    margin-right: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Navbar {
+        display: none;
+    }
+    .MobileNavBar{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .MobileNavBar{
+        display: none;
+    }
+    .Navbar {
+        display: flex;
+    }
+}
