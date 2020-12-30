@@ -6,7 +6,7 @@ import {FaSearch} from "react-icons/fa";
 
 import styled from 'styled-components'
 
-function MobileHamburguerMenu() {
+function MobileHamburguerMenu(props) {
 
     const [ShowHamb, setShowHamb] = useState(false)
 
@@ -39,15 +39,15 @@ function MobileHamburguerMenu() {
             </div>
 
             <HambDiv show={ShowHamb}>
-                <NavItem in_page={true} page={"/"}>
+                <NavItem in_page={props.type==="Home"} page={"/"}>
                     Home
                 </NavItem>
 
-                <NavItem in_page={false} page={"/topics"}>
+                <NavItem in_page={props.type==="Topics"} page={"/topics"}>
                     Topics
                 </NavItem>
 
-                <NavItem in_page={false} page={"/about"}>
+                <NavItem in_page={props.type==="About"} page={"/about"}>
                     About Me
                 </NavItem>
 

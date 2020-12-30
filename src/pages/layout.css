@@ -6,7 +6,6 @@ body {
 .mainLayout {
     width: 100%;
     margin: auto;
-    height: 2500px;
 
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,7 +15,6 @@ body {
         border: #ffffff solid 1px;
         width: 75%;
         margin: auto;
-        height: 2500px;
     }
 }
 
@@ -25,7 +23,6 @@ body {
         border: #61dafb solid 1px;
         width: 75%;
         margin: auto;
-        height: 2500px;
     }
 }
 
@@ -34,7 +31,6 @@ body {
         border: #ff0026 solid 1px;
         width: 1260px;
         margin: auto;
-        height: 2500px;
     }
 }
 

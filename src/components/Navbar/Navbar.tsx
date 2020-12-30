@@ -12,20 +12,20 @@ function Navbar(props) {
         <div className={"NavContainer"}>
 
             <div className={"MobileNavBar"}>
-                <MobileHamburguerMenu></MobileHamburguerMenu>
+                <MobileHamburguerMenu type={props.type}></MobileHamburguerMenu>
             </div>
 
             <div className={"Navbar"}>
 
-                <NavItem in_page={true} page={"/"}>
+                <NavItem in_page={props.type==="Home"} page={"/"}>
                     Home
                 </NavItem>
 
-                <NavItem in_page={false} page={"/topics"}>
+                <NavItem in_page={props.type==="Topics"} page={"/topics"}>
                     Topics
                 </NavItem>
 
-                <NavItem in_page={false} page={"/about"}>
+                <NavItem in_page={props.type==="About"} page={"/about"}>
                     About Me
                 </NavItem>
 
