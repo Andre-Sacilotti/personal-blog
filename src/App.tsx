@@ -1,13 +1,15 @@
+// eslint-disable-next-line no-use-before-define
 import React from 'react';
 import './App.css';
-
-import Home from './screens/home'
+import Routes from "./routes/index"
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+
   );
 }
 
