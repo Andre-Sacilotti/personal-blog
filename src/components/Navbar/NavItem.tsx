@@ -7,7 +7,7 @@ function NavItem(props) {
   const Line = styled.div`
       margin: 0;
       padding-top: 7px;
-      border-bottom: ${(PropsLine) => (PropsLine.underline === false ? '0px' : '1px')} solid ${(props) => (props.in_page === true ? '#ffffff' : '#ffffff34')};
+      border-bottom: ${(PropsLine) => (PropsLine.underline === false ? '0px' : '1px')} solid ${(props) => (props.in_page ? '#ffffff' : '#ffffff34')};
 
       @media only screen and (max-width: 600px) {
         display: none;
@@ -30,12 +30,6 @@ function NavItem(props) {
       }
     `;
 
-  const ItemDiv = styled.div`
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 30px;
-    `;
-
   const StyledLink = styled(Link)`
     text-decoration: none;
 
@@ -45,14 +39,14 @@ function NavItem(props) {
   `
 
   return (
-    <ItemDiv>
+    <div className={"NavBar-ItemDiv"}>
         <StyledLink to={props.page}>
           <Item in_page={props.in_page} underline={props.underline}>
             {props.children}
           </Item>
           <Line in_page={props.in_page} underline={props.underline} />
         </StyledLink>
-    </ItemDiv>
+    </div>
   );
 }
 

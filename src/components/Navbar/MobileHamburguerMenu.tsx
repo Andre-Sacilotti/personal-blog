@@ -4,6 +4,8 @@ import {IconContext} from "react-icons";
 import {FiMenu} from "react-icons/fi";
 import {FaSearch} from "react-icons/fa";
 
+import "./Navbar.css"
+
 import styled from 'styled-components'
 
 function MobileHamburguerMenu(props) {
@@ -11,43 +13,42 @@ function MobileHamburguerMenu(props) {
     const [ShowHamb, setShowHamb] = useState(false)
 
     const toggle_hamburguerMenu = () => {
+        console.log("Teste")
         setShowHamb(!ShowHamb)
     }
 
-    const HambMenu = styled.button`
-        background-color: #16151F;
-        border: 0px;
-    `
 
     const HambDiv = styled.div`
-        display: ${props => props.show ? "flex" : "none"};
+        display: flex;
         flex-direction: column;
         align-items: center;
     `
 
-
     return (
         <div>
             <div className={"MobileNavBar-menudiv"}>
-                <HambMenu onClick={toggle_hamburguerMenu}>
+                <button className={"HambNavBar-Button"} onClick={toggle_hamburguerMenu}>
                     <NavItem in_page={false} underline={false}>
                         <IconContext.Provider value={{size: '1.7em'}}>
                             <FiMenu/>
                         </IconContext.Provider>
                     </NavItem>
-                </HambMenu>
+                </button>
             </div>
 
-            <HambDiv show={ShowHamb}>
-                <NavItem in_page={props.type==="Home"} page={"/"}>
+            {ShowHamb && <HambDiv show={ShowHamb}>
+                <p className={"HambNavbar-CustomP"}>
+                    Menu
+                </p>
+                <NavItem in_page={props.type === "Home"} page={"/"}>
                     Home
                 </NavItem>
 
-                <NavItem in_page={props.type==="Topics"} page={"/topics"}>
+                <NavItem in_page={props.type === "Topics"} page={"/topics"}>
                     Topics
                 </NavItem>
 
-                <NavItem in_page={props.type==="About"} page={"/about"}>
+                <NavItem in_page={props.type === "About"} page={"/about"}>
                     About Me
                 </NavItem>
 
@@ -56,7 +57,8 @@ function MobileHamburguerMenu(props) {
                         <FaSearch/>
                     </IconContext.Provider>
                 </NavItem>
-            </HambDiv>
+            </HambDiv>}
+
         </div>
     )
 }
