@@ -19,12 +19,25 @@ const NewsLetter = () => {
         margin:0;
     `
 
+    const Container = styled.div`
+      padding-left: 0px;
+      padding-right: 100px;
+      padding-top: 80px;
+
+      @media only screen and (max-width: 850px) {
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0px;
+      }
+    `
+
     return (
-        <div>
+        <Container>
             <NewsUpperText>Subscribe to newsletter</NewsUpperText>
             <NewsLowerText>Get notified on every new article</NewsLowerText>
             <InputButton></InputButton>
-        </div>
+        </Container>
     )
 }
 

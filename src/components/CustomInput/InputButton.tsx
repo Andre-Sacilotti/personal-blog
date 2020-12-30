@@ -6,6 +6,7 @@ const InputButton = () => {
     const Container = styled.div`
       display: inline-flex;
       padding-top: 10px;
+      
     `
 
     const CustomButton = styled.button`

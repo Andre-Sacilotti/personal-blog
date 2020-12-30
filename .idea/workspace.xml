@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a0b50fd-3804-4725-a562-c100105a113a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SocialNetworks/SocialNetworks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomInput/InputButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInput/InputButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewsLetter/NewsLetter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsLetter/NewsLetter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Topics/topics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Topics/topics.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,8 @@
       <updated>1609238766236</updated>
       <workItem from="1609238767790" duration="19081000" />
       <workItem from="1609306910554" duration="1233000" />
-      <workItem from="1609308293298" duration="11890000" />
+      <workItem from="1609308293298" duration="13228000" />
+      <workItem from="1609326231520" duration="4560000" />
     </task>
     <servers />
   </component>
