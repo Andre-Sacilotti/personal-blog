@@ -3,8 +3,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import {Link} from "react-router-dom";
 
-function NavItem(props) {
-  const Line = styled.div`
+const Line = styled.div`
       margin: 0;
       padding-top: 7px;
       border-bottom: ${(PropsLine) => (PropsLine.underline === false ? '0px' : '1px')} solid ${(props) => (props.in_page ? '#ffffff' : '#ffffff34')};
@@ -14,7 +13,7 @@ function NavItem(props) {
       }
     `;
 
-  const Item = styled.p`
+const Item = styled.p`
       margin: 0;
       
       font-family: 'Montserrat', sans-serif;
@@ -30,7 +29,7 @@ function NavItem(props) {
       }
     `;
 
-  const StyledLink = styled(Link)`
+const StyledLink = styled(Link)`
     text-decoration: none;
 
     &:focus, &:hover, &:visited, &:link, &:active {
@@ -38,16 +37,33 @@ function NavItem(props) {
     }
   `
 
-  return (
-    <div className={"NavBar-ItemDiv"}>
-        <StyledLink to={props.page}>
-          <Item in_page={props.in_page} underline={props.underline}>
-            {props.children}
-          </Item>
-          <Line in_page={props.in_page} underline={props.underline} />
-        </StyledLink>
-    </div>
-  );
+function NavItem(props) {
+
+    return (
+        <div>
+            { (props.page === undefined || props.page === null) ?
+                (
+                    <div className={"NavBar-ItemDiv"}>
+                        <Item in_page={props.in_page} underline={props.underline}>
+                            {props.children}
+                        </Item>
+                        <Line in_page={props.in_page} underline={props.underline} />
+                    </div>
+                )
+                :
+                (
+                    <div className={"NavBar-ItemDiv"}>
+                        <StyledLink to={props.page}>
+                            <Item in_page={props.in_page} underline={props.underline}>
+                                {props.children}
+                            </Item>
+                            <Line in_page={props.in_page} underline={props.underline} />
+                        </StyledLink>
+                    </div>
+                )}
+        </div>
+    )
+
 }
 
 export default NavItem;

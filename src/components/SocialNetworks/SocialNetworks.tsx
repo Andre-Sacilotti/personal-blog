@@ -3,9 +3,7 @@ import {FaLinkedin, FaMedium, FaGithub, FaKaggle, FaDev} from 'react-icons/fa';
 import {IconContext} from "react-icons";
 import styled from 'styled-components'
 
-const SocialNetworks = () => {
-
-    const Container = styled.div`
+const Container = styled.div`
       padding-left: 0px;
       padding-right: 100px;
       padding-top: 110px;
@@ -18,10 +16,12 @@ const SocialNetworks = () => {
       }
     `
 
-    const CustomA = styled.a`
+const CustomA = styled.a`
       padding-left: 5px;
       padding-right: 5px;
     `
+
+const SocialNetworks = () => {
 
     return (
         <Container>
