@@ -8,27 +8,38 @@ import "./Navbar.css"
 
 import styled from 'styled-components'
 
-function MobileHamburguerMenu(props) {
-
-    const [ShowHamb, setShowHamb] = useState(false)
-
-    const toggle_hamburguerMenu = () => {
-        console.log("Teste")
-        setShowHamb(!ShowHamb)
-    }
-
-
-    const HambDiv = styled.div`
+const HambDiv = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
     `
 
+function MobileHamburguerMenu(props) {
+
+    const [ShowHamb, setShowHamb] = useState(false)
+
+    const toggle_hamburguerMenu = () => {
+        setShowHamb(!ShowHamb)
+        
+        let element = document.getElementsByClassName("mainLayout");
+        let element2 = document.getElementsByClassName("Footer-MainLayout");
+
+        if (element[0]['style'].display===""){
+            element[0]['style'].display = "none";
+            element2[0]['style'].display = "none";
+        }else{
+            element[0]['style'].display = "";
+            element2[0]['style'].display = "";
+        }
+
+    }
+
+
     return (
         <div>
             <div className={"MobileNavBar-menudiv"}>
                 <button className={"HambNavBar-Button"} onClick={toggle_hamburguerMenu}>
-                    <NavItem in_page={false} underline={false}>
+                    <NavItem in_page={false} underline={false} page={null}>
                         <IconContext.Provider value={{size: '1.7em'}}>
                             <FiMenu/>
                         </IconContext.Provider>
@@ -36,7 +47,7 @@ function MobileHamburguerMenu(props) {
                 </button>
             </div>
 
-            {ShowHamb && <HambDiv show={ShowHamb}>
+            { ShowHamb ? <HambDiv show={ShowHamb} className={"HambDiv-Container"}>
                 <p className={"HambNavbar-CustomP"}>
                     Menu
                 </p>
@@ -57,7 +68,7 @@ function MobileHamburguerMenu(props) {
                         <FaSearch/>
                     </IconContext.Provider>
                 </NavItem>
-            </HambDiv>}
+            </HambDiv> : null}
 
         </div>
     )
