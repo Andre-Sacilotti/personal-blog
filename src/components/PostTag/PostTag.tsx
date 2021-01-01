@@ -1,20 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
-const DivTag = styled.span`
-  color: #FFFFFF;
-  font-size: 15px;
-`
+
 
 const CustomDiv = styled.div`
   border-radius: 29px;
-  background-color: #577694;
-
-  width: ${(parseInt(DivTag.width.replace("px", ""))*2).toString()+"px"};
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #577694;
+  color: #FFFFFF;
+  height: 20px;
+  padding: 0 20px 0 23px;
+  -webkit-transition: background 0.5s;
+  font-size: 11px;
+  margin-left: 3px;
+
+  &:hover {
+    background: #2c3e50;
+  }
   
+
 `
 
 
@@ -23,9 +29,7 @@ const PostTag = (props) => {
 
     return (
         <CustomDiv>
-            <DivTag>
-                {props.children}
-            </DivTag>
+            {props.children}
         </CustomDiv>
     )
 }

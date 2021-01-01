@@ -7,8 +7,10 @@ import PostTag from "../PostTag/PostTag";
 const Box = styled.div`
   width: 80%;
   height: 380px;
-  border: 2px solid #FFFFFF;
-  border-radius: 51px;
+  border-radius: 38px;
+  
+  
+  border: 3px solid #16151F;
   
   background-image: linear-gradient(
           rgba(16, 17, 30, 0.3),
@@ -16,7 +18,7 @@ const Box = styled.div`
   ), url("https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/Cool-New-Features-in-Python-3.8_Watermarked.cab411b93786.jpg&w=960&sig=884f1278fa8a960fb67f5d0f8b0a0858d58843e2");
   margin: auto;
   margin-bottom: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
   
   
 
@@ -60,7 +62,7 @@ const Description = styled.p`
 
 const CustomDateDiv = styled.div`
   display: flex;
-  margin-top: 140px;
+  
   margin-left: 20px;
   margin-bottom: 0;
 
@@ -72,22 +74,38 @@ const ProfilePhotoContainer = styled.div`
   padding-top: 10px;
   display: flex;
   
+  
 `
 
-const AuthorName = styled.p`
-  vertical-align: middle;
+const AuthorNameContainer = styled.div`
+  padding-left: 10px;
+  margin: auto 0;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 13px;
-  
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
 `
-const AuthorNameContainer = styled.div`
-  max-height: 100%;
-  height: 100%;
+
+const TagsContainer = styled.div`
+  margin: auto 0;
+  vertical-align: middle;
   padding-left:  10px;
+  display: flex;
+  
+  
+`
+
+const CustomSection = styled.div`
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  display:flex;
+  align-items:flex-end;
+`
+
+const SectionAlign = styled.div`
+margin-bottom: 17px;
+  
+  
 `
 
 
@@ -98,40 +116,56 @@ const PostCard = () => {
         <div>
 
                 <Box>
-                    <section>
-                        <CustomDateDiv>
-                            <ReadTime>
-                                2 min read
-                            </ReadTime>
-                            <Date>
-                                Dez 5, 2020
-                            </Date>
-                        </CustomDateDiv>
+                    <CustomSection>
 
-                        <Title>
-                            Titulo do Artigo
-                        </Title>
+                        <SectionAlign>
+                            <TagsContainer>
 
-                        <Description>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada neque volutpat massa dignissim elementum. Morbi faucibus ipsum nulla, interdum euismod mauris eleifend ut. Fusce neque risus, scelerisque sit amet
-                        </Description>
-                        <ProfilePhotoContainer>
-                            <RoundPhoto
-                                width={"32px"}
-                                height={"32px"}
-                                post_author_img={
-                                    "http://trackwalkins.com/wp-content/uploads/2019/02/default-profile-picture.jpg"
-                                }/>
-                            <AuthorNameContainer>
-                                <AuthorName>
-                                        André Sacilotti
-                                </AuthorName>
-                            </AuthorNameContainer>
-                            <PostTag>
-                                Tech
-                            </PostTag>
-                        </ProfilePhotoContainer>
-                    </section>
+                                <PostTag>
+                                    Tech
+                                </PostTag>
+
+
+                                <PostTag>
+                                    Programming
+                                </PostTag>
+
+                            </TagsContainer>
+                            <CustomDateDiv>
+                                <ReadTime>
+                                    2 min read
+                                </ReadTime>
+                                <Date>
+                                    Dez 5, 2020
+                                </Date>
+                            </CustomDateDiv>
+
+                            <Title>
+                                Titulo do Artigo
+                            </Title>
+
+                            <Description>
+                                Lorem ipsum dolor sit amet, ipsum nulla, interdum euismod mauris eleifend ut. Fusce neque risus, scelerisque sit amet
+                            </Description>
+                            <ProfilePhotoContainer>
+                                <RoundPhoto
+                                    width={"32px"}
+                                    height={"32px"}
+                                    post_author_img={
+                                        "http://trackwalkins.com/wp-content/uploads/2019/02/default-profile-picture.jpg"
+                                    }/>
+                                <AuthorNameContainer>
+
+                                            André Sacilotti
+
+                                </AuthorNameContainer>
+
+
+
+
+                            </ProfilePhotoContainer>
+                        </SectionAlign>
+                    </CustomSection>
                 </Box>
 
         </div>
