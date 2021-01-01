@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3a0b50fd-3804-4725-a562-c100105a113a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostTag/PostTag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RoundPhoto/RoundPhoto.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomInput/InputButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInput/InputButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsLetter/NewsLetter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsLetter/NewsLetter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SocialNetworks/SocialNetworks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SocialNetworks/SocialNetworks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostCard/PostCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostCard/PostCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
