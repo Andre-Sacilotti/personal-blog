@@ -3,23 +3,21 @@ import styled from 'styled-components'
 
 import InputButton from '../CustomInput/InputButton'
 
-const NewsLetter = () => {
-
-    const NewsUpperText = styled.p`
+const NewsUpperText = styled.p`
         font-size: 20px;
         color: #FFFFFF;
         margin:0;
         padding-bottom: 7px;
     `
 
-    const NewsLowerText = styled.p`
+const NewsLowerText = styled.p`
         font-size: 13px;
         font-weight:200;
         color: #FFFFFF;
         margin:0;
     `
 
-    const Container = styled.div`
+const Container = styled.div`
       padding-left: 0px;
       padding-right: 100px;
       padding-top: 80px;
@@ -31,6 +29,8 @@ const NewsLetter = () => {
         margin: 0px;
       }
     `
+
+const NewsLetter = () => {
 
     return (
         <Container>
