@@ -5,7 +5,7 @@ import RoundPhoto from "../RoundPhoto/RoundPhoto";
 import PostTag from "../PostTag/PostTag";
 
 const Box = styled.div`
-  width: 80%;
+  width: 352px;
   height: 380px;
   border-radius: 38px;
   
@@ -23,7 +23,7 @@ const Box = styled.div`
   
 
   @media only screen and (min-width: 600px) {
-    width: 45%;
+    width: 352px;
   
   }
 `
