@@ -17,13 +17,11 @@ body {
 
 @media only screen and (min-width: 600px) {
     .mainLayout {
-        border: #ffffff solid 1px;
         width: 75%;
         margin: auto;
     }
 
     .NavBar-MainLayout {
-        border: #ffffff solid 1px;
         width: 75%;
         margin: auto;
     }
@@ -31,26 +29,32 @@ body {
 
 @media only screen and (min-width: 768px) {
     .mainLayout {
-        border: #61dafb solid 1px;
         width: 75%;
         margin: auto;
     }
     .NavBar-MainLayout {
-        border: #61dafb solid 1px;
         width: 75%;
         margin: auto;
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1067px) {
     .mainLayout {
-        border: #ff0026 solid 1px;
-        width: 1260px;
+        width: 800px;
         margin: auto;
     }
     .NavBar-MainLayout {
-        border: #ff0026 solid 1px;
-        width: 1260px;
+        width: 800px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .mainLayout {
+        width: 1200px;
+        margin: auto;
+    }
+    .NavBar-MainLayout {
+        width: 1200px;
         margin: auto;
     }
 }

@@ -5,7 +5,7 @@ import RoundPhoto from "../RoundPhoto/RoundPhoto";
 import PostTag from "../PostTag/PostTag";
 
 const Box = styled.div`
-  width: 352px;
+  width: 320px;
   height: 380px;
   border-radius: 38px;
   
@@ -19,13 +19,40 @@ const Box = styled.div`
   margin: auto;
   margin-bottom: 30px;
   padding-top: 30px;
-  
+  margin-left: 20px;
+  margin-right: 20px;
+
   
 
-  @media only screen and (min-width: 600px) {
-    width: 352px;
-  
+  @media only screen and (max-width: 1067px) {
+    @media only screen and (min-width:601px) {
+      width: 270px;
+
+}
+
+    @media only screen and (min-width:840px) {
+      width: 260px;
+
+    }
+
   }
+
+  @media only screen and (max-width:839px) {
+    @media only screen and (min-width: 601px) {
+      width: 452px;
+
+    }
+    
+  }
+
+  //@media only screen and (min-width: 600px) {
+  //  width: 352px;
+  //
+  //}
+
+          
+  
+  
 `
 
 const Title = styled.p`

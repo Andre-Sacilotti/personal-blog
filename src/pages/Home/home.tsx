@@ -3,6 +3,7 @@ import '../layout.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from "../../components/Footer/Footer"
 import PostCard from "../../components/PostCard/PostCard";
+import ShowCaseGrid from '../../components/ShowCaseGrid/ShowCaseGrid'
 import {IconContext} from "react-icons";
 
 
@@ -15,7 +16,13 @@ function Home() {
                 </div>
 
                 <div className={'mainLayout'} >
-                    <PostCard />
+                    <ShowCaseGrid>
+                        <PostCard />
+                        <PostCard />
+                        <PostCard />
+                        <PostCard />
+                    </ShowCaseGrid>
+
                 </div>
 
                 <div className={'Footer-MainLayout'}>
