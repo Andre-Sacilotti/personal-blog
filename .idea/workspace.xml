@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a0b50fd-3804-4725-a562-c100105a113a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCard/PostCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostCard/PostCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/MobileHamburguerMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/layout.css" afterDir="false" />
     </list>

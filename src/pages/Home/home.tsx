@@ -30,9 +30,7 @@ function Home() {
                 </div>
 
             </div>
-        <div className={"Overlay-Hamburguer"}>
 
-        </div>
         </div>
     )
 }
