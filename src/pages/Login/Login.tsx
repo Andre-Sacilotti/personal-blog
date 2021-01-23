@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import PasswordInput from "../../components/CustomInput/PasswordInput";
 import LoginInput from "../../components/CustomInput/LoginInput";
 
+import {change_lang} from "../../action/langAction"
+
 const LoginContainer = styled.div`
   //border: 1px solid #FFFFFF;
   background: #09090988;
@@ -66,6 +68,8 @@ const ForgotPass = styled.div`
 `
 
 const Login = () => {
+
+    change_lang("teste")
 
     return (
         <Container>

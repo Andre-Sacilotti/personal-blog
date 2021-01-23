@@ -8,7 +8,7 @@ const Topics = () => {
     return (
         <div className={'mainLayout'} >
             <Navbar type={"Topics"} />
-            <Footer />
+
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../layout.css'
 import Navbar from '../../components/Navbar/Navbar'
-import Footer from "../../components/Footer/Footer"
 import PostCard from "../../components/PostCard/PostCard";
 import ShowCaseGrid from '../../components/ShowCaseGrid/ShowCaseGrid'
 import {IconContext} from "react-icons";
@@ -25,9 +24,7 @@ function Home() {
 
                 </div>
 
-                <div className={'Footer-MainLayout'}>
-                    <Footer/>
-                </div>
+
 
             </div>
 
